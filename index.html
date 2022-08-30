@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fd713c2769.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css">
     <script src="./assets/app.js" defer></script>
@@ -59,7 +60,7 @@
 
     <main class="parallax">
         <section class="skills">
-            <div class="text__skills">
+            <div class="text__skills" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
                 <h2>SKILLS</h2>
                 <p class="quote black">Career path: developer, who is having fun each day discovering new technologies
                     and
@@ -81,10 +82,11 @@
                 <ul class="stacks">
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>SASS</li>
+                    <li>BOOTSTRAP</li>
                     <li>JAVASCRIPT</li>
                     <li>PHP</li>
                     <li>SYMFONY</li>
-                    <li>BOOTSTRAP</li>
                     <li>WORDPRESS</li>
                 </ul>
             </div>
@@ -94,9 +96,24 @@
             <h2>EXPERIENCES</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, a. Temporibus at quis enim quod dicta
                 accusantium nisi animi inventore perspiciatis excepturi numquam deserunt officiis rem distinctio sequi
-                in sed voluptatibus, explicabo autem quibusdam? Ab dolorum optio ad error eius soluta necessitatibus
-                neque placeat, culpa, aut repellendus doloribus eveniet totam!</p>
-            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, soluta.</small>
+                in sed voluptatibus.</p>
+            <ul class="exp__list">
+                <li><span class="title__exp">Community Manager <small class="quote">Enodo Games</small></span> <span
+                        class="time__exp">6
+                        months</span></li>
+                <li><span class="title__exp">Community Manager <small class="quote">Enodo Games</small></span> <span
+                        class="time__exp">6
+                        months</span></li>
+                <li><span class="title__exp">Community Manager <small class="quote">Enodo Games</small></span> <span
+                        class="time__exp">6
+                        months</span></li>
+                <li><span class="title__exp">Community Manager <small class="quote">Enodo Games</small></span> <span
+                        class="time__exp">6
+                        months</span></li>
+                <li><span class="title__exp">Community Manager <small class="quote">Enodo Games</small></span> <span
+                        class="time__exp">6
+                        months</span></li>
+            </ul>
         </section>
 
         <section class="hobbies">
@@ -104,14 +121,15 @@
                 <source src="./assets/lux-bg-video.mp4" type="video/mp4">
             </video>
             <h2>HOBBIES</h2>
-            <p>Most of my time outside of coding and programming, I play video games of various forms, cooperative,
+            <p class="quote__hobbies">Most of my time outside of coding and programming, I play video games of various
+                forms, cooperative,
                 multi or solo. I love esports and have been a volunteer in several associations as a player, manager or
                 community
                 manager. I also organized tournaments, especially on Overwatch.
                 Reading is also part of my passion, but it must always be accompanied by a coffee.
                 UI/UX design is a topic I love, I like to imagine fake brands and to make a whole web branding.</p>
             <div class="hobbies__list">
-                <div class="video__games">
+                <div class="video__games" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1500">
                     <h3>VIDEO GAMES <span><i class="fa-solid fa-gamepad"></i></span></h3>
                     <p>I love <span class="highlight" data-highlight="3">league of legend</span> dolor sit amet
                         consectetur adipisicing elit. Asperiores, ut eveniet. Unde
@@ -120,16 +138,16 @@
                         molestiae fuga suscipit recusandae. Praesentium unde fugiat quia eligendi itaque tenetur
                         voluptatem impedit perspiciatis!</p>
                 </div>
-                <div class="UI__UX">
-                    <h3>VIDEO GAMES <span><i class="fa-solid fa-gamepad"></i></span></h3>
+                <div class="UI__UX" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1500">
+                    <h3>DESIGN UI/UX <span><i class="fa-solid fa-pen-nib"></i></span></h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ut eveniet. Unde
                         repudiandae quaerat eum doloremque eveniet dolorem error quod reiciendis mollitia ad quidem
                         maxime ex perferendis consequatur eos minus quisquam, consectetur blanditiis, nemo itaque sunt
                         molestiae fuga suscipit recusandae. Praesentium unde fugiat quia eligendi itaque tenetur
                         voluptatem impedit perspiciatis!</p>
                 </div>
-                <div class="other__hobbies">
-                    <h3>VIDEO GAMES <span><i class="fa-solid fa-gamepad"></i></span></h3>
+                <div class="other__hobbies" data-aos="fade-up" data-aos-delay="2300" data-aos-duration="1500">
+                    <h3>CODING <span><i class="fa-solid fa-computer"></i></span></h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ut eveniet. Unde
                         repudiandae quaerat eum doloremque eveniet dolorem error quod reiciendis mollitia ad quidem
                         maxime ex perferendis consequatur eos minus quisquam, consectetur blanditiis, nemo itaque sunt
@@ -141,6 +159,10 @@
     </main>
 
     <img src="./assets/Moon.png" alt="moon logo" class="moon">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

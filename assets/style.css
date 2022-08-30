@@ -144,11 +144,14 @@ body {
 p {
     font-size: var(--paragraph);
     font-family: "Nunito", sans-serif;
+    text-align: justify;
     letter-spacing: .05rem;
+    line-height: 1.5rem;
 }
 
 .quote {
     color: var(--quote);
+    font-size: var(--paragraph);
 }
 
 .highlight {
@@ -196,6 +199,43 @@ nav ul li {
     display: inline-block;
     margin: 0 1rem;
     overflow: hidden;
+    position: relative;
+}
+
+nav ul li::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--hightlight);
+    backdrop-filter: hue-rotate(120deg);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 2.5s ease-in-out;
+}
+
+nav ul li:hover::before {
+    animation: navAnim .5s ease-in-out;
+}
+
+@keyframes navAnim {
+    0% {
+        transform: translateX(100%);
+    }
+
+    20% {
+        transform: translateX(70%);
+    }
+
+    70% {
+        transform: translateX(30%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
 }
 
 .status {
@@ -516,6 +556,10 @@ main section {
     font-size: var(--sub-title);
 }
 
+.quote__hobbies {
+    color: var(--hightlight);
+}
+
 .hobbies .background-video {
     height: 100%;
     width: 100vw;
@@ -531,8 +575,12 @@ main section {
 .hobbies .hobbies__list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.hobbies__list h3 span {
+    font-size: var(--section-size);
 }
 
 .hobbies .video__games,
@@ -540,4 +588,46 @@ main section {
 .hobbies .other__hobbies {
     flex: auto;
     width: 30%;
+}
+
+.experiences p {
+    width: 50%;
+}
+
+.exp__list li {
+    padding: 1rem 0;
+    margin: 1rem 0;
+    /* border-bottom: 2px solid var(--text-and-title); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.exp__list li::before {
+    content: "";
+    width: 100%;
+    height: 3%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-and-title);
+    animation: borderExp 2.5s ease-in-out;
+}
+
+@keyframes borderExp {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.title__exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
