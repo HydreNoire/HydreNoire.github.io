@@ -119,20 +119,19 @@ accordeon.addEventListener('click', () => {
 })
 
 // MUSIC LISTENER
-let lofi = document.querySelector('#lofi');
+const audio = document.querySelector('#lofi');
+audio.volume = 0.1;
 let isPlaying = true;
 
 moon.addEventListener('click', togglePlay)
 
 function togglePlay() {
-    isPlaying ? lofi.pause() : lofi.play();
+    isPlaying ? audio.pause() : audio.play();
 };
-
-lofi.onplaying = function () {
+audio.onplaying = function () {
     isPlaying = true;
 };
-lofi.onpause = function () {
+audio.onpause = function () {
     isPlaying = false;
 };
 
-// const testAudio = new Audio().src('./lofi.mp3');
