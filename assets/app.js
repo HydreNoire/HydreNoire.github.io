@@ -118,3 +118,21 @@ accordeon.addEventListener('click', () => {
     document.querySelector('.fa-chevron-down').classList.toggle('rotate');
 })
 
+// MUSIC LISTENER
+let lofi = document.querySelector('#lofi');
+let isPlaying = true;
+
+moon.addEventListener('click', togglePlay)
+
+function togglePlay() {
+    isPlaying ? lofi.pause() : lofi.play();
+};
+
+lofi.onplaying = function () {
+    isPlaying = true;
+};
+lofi.onpause = function () {
+    isPlaying = false;
+};
+
+// const testAudio = new Audio().src('./lofi.mp3');
