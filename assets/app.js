@@ -60,7 +60,7 @@ const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1) + min
 highlightItem.forEach(element => {
     element.addEventListener('mouseover', () => {
         hoveringImg(element, 'data-highlight', "url(./assets/highlight", ".gif)");
-        document.querySelectorAll('.hightlight::before').style.transform = 'rotate(' + getRandom(-15, 15) + 'deg)';
+        // document.querySelectorAll('.hightlight::before').style.transform = 'rotate(' + getRandom(-15, 15) + 'deg)';
     })
 
     element.addEventListener('mouseleave', () => {
@@ -81,21 +81,12 @@ function removeHoveringImg(el) {
 }
 
 //  PARALLAX
-let statusPara = document.querySelectorAll('.status p');
-
 window.addEventListener("scroll", function () {
     const distance = window.scrollY;
-    console.log(distance)
     document.querySelector(".intro").style.transform = `translateY(${distance * 0.6}px)`;
     document.querySelector(".parallax").style.transform = `translateY(${distance * 0.5}px)`;
-
-    statusPara.forEach(element => {
-        if (distance > 1450 && distance < 2650) {
-            element.style.color = 'white';
-        } else {
-            element.style.color = '#FF8906';
-        }
-    });
+    document.querySelector('#hello').style.transform = `translateX(${distance * 0.5}px)`;
+    document.querySelector('#world').style.transform = `translateX(-${distance * 0.5}px)`;
 })
 
 // CLICKABLE CANVA
