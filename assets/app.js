@@ -15,51 +15,52 @@ document.addEventListener('mousemove', e => {
     cursor.style.left = (e.pageX - 30) + "px";
 })
 // SHOW "HOVER ME!" TEXT
-const elHover = document.querySelectorAll('.like__item');
-let random = Math.floor(Math.random() * 5);
-elHover.forEach(element => {
-    element.addEventListener('mouseover', () => {
-        cursor.style.display = 'block';
-    })
+// const elHover = document.querySelectorAll('.like__item');
+// let random = Math.floor(Math.random() * 5);
+// elHover.forEach(element => {
+//     element.addEventListener('mouseover', () => {
+//         cursor.style.display = 'block';
+//     })
 
-    element.addEventListener('mouseleave', () => {
-        cursor.style.display = 'none';
-    })
-});
+//     element.addEventListener('mouseleave', () => {
+//         cursor.style.display = 'none';
+//     })
+// });
 
 // DOT TRANSFORMATION
-let introTitle = document.querySelector('.title__intro');
-let dot = document.querySelector('.dot');
-introTitle.addEventListener('mouseover', expandDot)
-introTitle.addEventListener('mouseleave', () => {
-    dot.style.width = "50px";
-    dot.style.height = "50px";
-})
+// let introTitle = document.querySelector('.title__intro');
+// let dot = document.querySelector('.dot');
+// introTitle.addEventListener('mouseover', expandDot)
+// introTitle.addEventListener('mouseleave', () => {
+//     dot.style.width = "50px";
+//     dot.style.height = "50px";
+// })
 
-function expandDot() {
-    dot.style.width = "80%";
-    dot.style.height = "117%";
-}
+// function expandDot() {
+//     dot.style.width = "80%";
+//     dot.style.height = "117%";
+// }
 
 // HIGHTLIGHT IMG SHOWING
-let itemLike = document.querySelectorAll(".like__item");
+// let itemLike = document.querySelectorAll(".like__item");
 let highlightItem = document.querySelectorAll(".highlight");
 let imageLi = document.createElement('div');
 const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-itemLike.forEach(element => {
-    element.addEventListener('mouseover', () => {
-        hoveringImg(element, 'data-id', "url(./assets/hover", ".jpg)");
-    })
+// itemLike.forEach(element => {
+//     element.addEventListener('mouseover', () => {
+//         hoveringImg(element, 'data-id', "url(./assets/hover", ".jpg)");
+//     })
 
-    element.addEventListener('mouseleave', () => {
-        removeHoveringImg(element);
-    })
-});
+//     element.addEventListener('mouseleave', () => {
+//         removeHoveringImg(element);
+//     })
+// });
 
 highlightItem.forEach(element => {
     element.addEventListener('mouseover', () => {
         hoveringImg(element, 'data-highlight', "url(./assets/highlight", ".gif)");
+        document.querySelectorAll('.hightlight::before').style.transform = 'rotate(' + getRandom(-15, 15) + 'deg)';
     })
 
     element.addEventListener('mouseleave', () => {
