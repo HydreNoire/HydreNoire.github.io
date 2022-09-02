@@ -120,8 +120,8 @@ accordeon.addEventListener('click', () => {
 
 // MUSIC LISTENER
 const audio = document.querySelector('#lofi');
-audio.volume = 0.1;
-let isPlaying = true;
+audio.volume = 0.05;
+let isPlaying = false;
 
 moon.addEventListener('click', togglePlay)
 

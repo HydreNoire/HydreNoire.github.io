@@ -577,6 +577,7 @@ main section {
 
 .quote__hobbies {
     color: var(--hightlight);
+    font-size: 700;
 }
 
 .hobbies .background-video {
