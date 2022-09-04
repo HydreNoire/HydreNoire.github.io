@@ -689,10 +689,10 @@ main section {
 
 .hero__contact p {
     width: 42rem;
-    font-size: var(--section-size);
+    font-size: var(--paragraph);
     line-height: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--text-and-title);
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--hightlight);
 }
 
 .link__contact {
@@ -705,6 +705,37 @@ main section {
 
 .social__contact {
     align-self: flex-start;
+}
+
+.social__contact a {
+    margin: 0 2.5rem;
+    font-size: var(--title-size);
+    color: var(--text-and-title);
+    position: relative;
+}
+
+.social__contact a svg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50px, 50px) rotate(45deg);
+    fill: none;
+    stroke: var(--stroke, var(--line));
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke-dasharray: var(--offset, 69px) 278px;
+    stroke-dashoffset: 361px;
+    transition: stroke .25s ease-in-out var(--stroke-delay, 0s), stroke-dasharray .5s;
+}
+
+.social__contact a svg:hover {
+    --spacing: 4px;
+    --stroke: var(--hightlight);
+    --line: #BBC1E1;
+    --stroke-delay: .2s;
+    --offset: 180px;
 }
 
 .mail__contact {
@@ -732,8 +763,8 @@ main section {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255,0.1);
-    -webkit-backdrop-filter: invert(70%);
-    backdrop-filter: invert(70%);
+    -webkit-backdrop-filter: invert(100%);
+    backdrop-filter: invert(100%);
     border-radius: 50px;
     position: absolute;
     top: 0;
