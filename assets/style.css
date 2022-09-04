@@ -652,70 +652,98 @@ main section {
     align-items: flex-start;
 }
 
-.main__wrapper {
-    height: 100vh;
-    width: 100%;
+.main__contact {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
 }
 
-.main__wrapper::before {
+.main__contact::before  {
     content: "";
-    z-index: -5;
-    background-image: url(./contact_bg.jpg);
-    background-position: left;
-    background-size: cover;
-    opacity: .5;
-    width: 50%;
-    height: 100%;
+    z-index: -99;
     position: absolute;
     top: 0;
     left: 0;
+    width: 50%;
+    height: 100%;
+    background: url(./contact_bg.jpg);
+    background-size: cover;
+    opacity: .3;
+    box-shadow:0 0 0 0 gray inset,
+             0 0 0 0 green inset,
+             0 0 0 0 red inset,
+             -2rem 0 1rem 3rem var(--background) inset;
 }
 
-.intro__contact {
-    width: 100%;
+.hero__contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    padding: 0;
+}
+
+.link__contact {
+    height: 30%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
-.intro__contact h1 {
-    flex-basis: 40%;
+.social__contact {
+    align-self: flex-start;
+}
+
+.mail__contact {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    line-height: 50%;
+    align-items: center;
+    gap: 2rem;
 }
 
-.intro__contact h1 span {
-    align-self: center;
-    font-size: var(--gigantesc);
-    line-height: 0;
-    margin-top: 8rem;
-    margin-left: 20rem;
+.mail__contact button {
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--text-and-title);
+    background-color: var(--background);
+    border: 2px solid var(--text-and-title);
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
 }
 
-.intro__contact p {
-    flex-basis: 20%;
+.mail__contact button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,0.1);
+    -webkit-backdrop-filter: invert(70%);
+    backdrop-filter: invert(70%);
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all .1s linear;
 }
 
-.intro__contact .rolling__at {
-    font-size: 5rem;
-    margin: 3rem;
-    animation: rolling 5s linear infinite;
+.mail__contact button:hover::before  {
+    left: 0;
 }
 
-@keyframes rolling {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.mail__contact button:hover {
+    transform: translateX(25px);
 }
 
+.mail__contact input {
+    font-size: var(--title-size);
+    color: var(--text-and-title);
+    pointer-events: none;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    width: 43.5rem;
+    user-select: none;
+}
