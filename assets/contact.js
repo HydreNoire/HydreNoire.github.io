@@ -1,8 +1,13 @@
-let mail = document.querySelector('#mail');
-let btnCopy = document.querySelector('#copy');
+let btn = new ClipboardJS('#copy');
+let alertSuccess = document.querySelector(".alert__copy");
 
-btnCopy.addEventListener('click', () => {
-    let copy = mail.select();
+btn.on('success', () => {
+    alertSuccess.style.display = "block";
+    setTimeout( () => {
+        alertSuccess.style.display = "none";
+    }, 950);
+});
 
-    document.execCommand('copy', true, copy);
+btn.on('error', () => {
+    alert('nope')
 });

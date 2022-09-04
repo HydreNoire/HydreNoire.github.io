@@ -677,10 +677,22 @@ main section {
 
 .hero__contact {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
     height: 70%;
     padding: 0;
+}
+
+.hero__contact h2 {
+    align-self: center;
+}
+
+.hero__contact p {
+    width: 42rem;
+    font-size: var(--section-size);
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--text-and-title);
 }
 
 .link__contact {
@@ -737,13 +749,45 @@ main section {
     transform: translateX(25px);
 }
 
-.mail__contact input {
+.mail__contact p {
     font-size: var(--title-size);
-    color: var(--text-and-title);
-    pointer-events: none;
     font-weight: 400;
-    background: transparent;
-    border: none;
-    width: 43.5rem;
     user-select: none;
+    position: relative;
+    color: var(--hightlight);
+}
+
+.alert__copy {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    font-size: 20px;
+    animation: appearing 1s ease-in-out infinite;
+    overflow: hidden;
+    color: var(--text-and-title);
+    display: none;
+}
+
+@keyframes appearing {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
 }
