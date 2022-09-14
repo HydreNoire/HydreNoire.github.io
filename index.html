@@ -8,13 +8,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fd713c2769.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/transition.css">
     <script src="./assets/app.js" defer></script>
     <title>Lise Perré | A Propos</title>
 </head>
 
 <body>
-    <!-- FOR TRANSITION PAGE -->
-    <!-- https://barba.js.org/docs/getstarted/intro/ -->
+    <!-- <div class="transition is__active"></div> -->
+
     <div class="bg__noise"></div>
     <img src="./assets/cursor_hover.png" alt="" class="cursor">
 
@@ -73,7 +74,7 @@
                     des miennes.
                     Apprendre des autres est la meilleure opportunité. Très curieuse je m'intéresses sur plein sujets
                     que je ne connais pas. J'aime la musique, les jeux
-                    (let's go LDLC OL), la technologie,
+                    (let's go <span class="highlight" data-highlight="2">LDLC OL</span>), la technologie,
                     et de ce fait discuter de tout ce qui touche à ces sujets.
                 </p>
             </div>
@@ -129,34 +130,54 @@
             <p class="quote__hobbies"></p>
             <div class="hobbies__list">
                 <div class="video__games" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1500">
-                    <h3>VIDEO GAMES <span><i class="fa-solid fa-gamepad"></i></span></h3>
-                    <p>I love <span class="highlight" data-highlight="3">league of legend</span> i played at this game
-                        for many too hours... Most of my time outside of coding and programming, I play video games of
-                        various
-                        forms, cooperative,
-                        multi or solo. I love esports and have been a volunteer in several associations as a player,
-                        manager or
-                        community
-                        manager. I also organized tournaments, especially on Overwatch.
-                        Reading is also part of my passion, but it must always be accompanied by a coffee.
-                        UI/UX design is a topic I love, I like to imagine fake brands and to make a whole web branding.
+                    <h3>JEUX VIDÉOS <span><i class="fa-solid fa-gamepad"></i></span></h3>
+                    <p>J'adore <span class="highlight" data-highlight="3">League Of Legend</span> j'y consacre bien du
+                        temps personnel ! <br>
+                        Au dela de ce jeu, j'aime joué à des jeux variés, selon mon envie, mes humeurs (et le temps
+                        disponible). Entre deux
+                        instances en <span class="highlight" data-highlight="3">MMO</span>, se défouler sur un
+                        <span class="highlight" data-highlight="3">bon FPS</span> ou alors se poser devant un jeu
+                        narratif. Chercher et découvrir de très sympathiques jeux indépendants est un peu comme un peu
+                        comme un passe temps relaxant pour moi. <br>
+                        J'ai participé activement et ce pendant plusieurs années à la vie e-sportive française, en
+                        co montant une association qui a perduré pendant 2 ans 1/2 présente sur
+                        <span class="highlight" data-highlight="2">Overwatch</span>,
+                        mais aussi <span class="highlight" data-highlight="2">Valorant</span> et
+                        <span class="highlight" data-highlight="2">Counter Strike</span>, j'ai tenu les postes de
+                        joueuse, manager, coach suppléante mais aussi community manager. Pendant 4 ans, j'ai
+                        organisé et tenu un tournoi annuel sur l'un de ces jeux, regroupant en général une trentaine
+                        d'équipe.
                     </p>
                 </div>
                 <div class="UI__UX" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1500">
-                    <h3>DESIGN UI/UX <span><i class="fa-solid fa-pen-nib"></i></span></h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ut eveniet. Unde
-                        repudiandae quaerat eum doloremque eveniet dolorem error quod reiciendis mollitia ad quidem
-                        maxime ex perferendis consequatur eos minus quisquam, consectetur blanditiis, nemo itaque sunt
-                        molestiae fuga suscipit recusandae. Praesentium unde fugiat quia eligendi itaque tenetur
-                        voluptatem impedit perspiciatis!</p>
+                    <h3>WEB DESIGN <span><i class="fa-solid fa-pen-nib"></i></span></h3>
+                    <p>Laissez libre cour à son imagination est un vrai repos éveillé ! <br>
+                        Voir des mouvements de mode architecturale, culturelle ou artistique
+                        se transposé dans le web, et de voir toute la recherche web design faites autour de ces sujets.
+                        Prendre un peu de temps pour préparer un moodboard pour une maquette est un de mes moments
+                        favoris,
+                        où je peux parfois me laisser emporter un peu trop de temps et finir par mélanger deux idées
+                        hétérogène. <br>
+                        J'ai plusieurs mouvements web que j'aime beaucoup, et dont je m'inspire notamment pour mes sides
+                        projects, comme le <span class="highlight" data-highlight="1">néo-brutalism</span> ou le
+                        <span class="highlight" data-highlight="2">memphis design</span>. <br>
+                        Même si la partie code pur et dur est un de mes péchés mignon, j'aime beaucoup pouvoir
+                        travailler sur une maquette qui proposera une expérience visuelle intéressante et agréable à
+                        l'utilisateur.
+                    </p>
                 </div>
                 <div class="other__hobbies" data-aos="fade-up" data-aos-delay="2300" data-aos-duration="1500">
-                    <h3>CODING <span><i class="fa-solid fa-computer"></i></span></h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ut eveniet. Unde
-                        repudiandae quaerat eum doloremque eveniet dolorem error quod reiciendis mollitia ad quidem
-                        maxime ex perferendis consequatur eos minus quisquam, consectetur blanditiis, nemo itaque sunt
-                        molestiae fuga suscipit recusandae. Praesentium unde fugiat quia eligendi itaque tenetur
-                        voluptatem impedit perspiciatis!</p>
+                    <h3>L'ESPACE <span><i class="fa-solid fa-user-astronaut"></i></h3>
+                    <p>L'astronomie, sujet aussi vaste que l'est l'espace, j'aime beaucoup lire et/ou apprendre sur ce
+                        sujet. <br> Tout comme peut l'être notre connaissance du corps humain, notre connaissance sur
+                        l'espace évolue chaque jour sur les nouvelles découvertes, mais laisse encore des millions de
+                        possiblité. La terre est-elle la seule planète vivable ? Sommes-nous la seule planète
+                        où cohabitent des êtres vivants ? <br>
+                        Tout autant de questionnement qui me donne une seule envie, dévorer des études, apprendre et
+                        comprendre les astres, leur origine, leur évolution notamment. <br>
+                        De facto, tous les jours je fais attention à mon emprunte carbone, pour aider à sauver et
+                        aider notre planète qui est le cocon de notre humanité.
+                    </p>
                 </div>
             </div>
         </section>
