@@ -75,7 +75,6 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     width: 100%;
-    /* height: 100vh; */
     /* user-select: none; */
 }
 
@@ -167,7 +166,8 @@ p {
 
 .highlight::before {
     content: "";
-    width: 110%;
+    transform: rotate(-5deg);
+    width: 100%;
     height: 120%;
     border-radius: 50%;
     border: 2px var(--hightlight) solid;
@@ -201,7 +201,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 900;
 }
 
 header nav {

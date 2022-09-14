@@ -135,3 +135,9 @@ accordeon.addEventListener('click', () => {
 //     isPlaying = false;
 // };
 
+window.onload = () => {
+    const transitionElement = document.querySelector('.transition')
+    setTimeout(() => {
+
+    }, 500)
+}
