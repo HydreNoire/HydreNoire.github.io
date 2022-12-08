@@ -1,7 +1,7 @@
 
 # Site Web | Portfolio
 
-<a align="center" height="400" href=https://hydrenoire.github.io/"><img width="100%" alt="Cover site web" src="./assets/cover_readME.png" /></a>
+<a align="center" height="400" href="https://hydrenoire.github.io/"><img width="100%" alt="Cover site web" src="./assets/cover_readME.png" /></a>
 
 ## À propos
 
@@ -9,21 +9,8 @@ Ce projet a été mon fil rouge durant toute ma formation. Il m'a permit d'appli
 Le but de ce projet était de pouvoir avoir un premier site internet, qui puisse me représenter sur le web et d'y afficher mes compétences.
 Le site est donc très simple, mais l'idée est qu'il puisse être perfectionnable et que je puisse le changer au cours du temps. Tel un vrai bac à sale ce site a pour but de bouger au cours du temps et de m'acompagner dans ma vie de développeuse.
 
-## Table des matières
-
-- 🪧 [À propos](#à-propos)
-- 📦 [Visiter](#visiter)
-- 🏗️ [Construit avec](#construit-avec)
-- 📚 [Documentation](#documentation)
-- 🏷️ [Gestion des versions](#gestion-des-versions)
-- 📝 [Licence](#licence)
-
-## Visiter
-
 Ce site ne contient aucun back-end, il contient seulement une partie front.
 Le site est hébergé sur <a href="https://hydrenoire.github.io/" target="_blank">une page GitHub</a>
-
-## Construit avec
 
 ### Langages & Frameworks
 
