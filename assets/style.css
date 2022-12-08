@@ -283,19 +283,6 @@ nav ul li:hover::before {
     flex-direction: column;
 }
 
-/* .dot {
-    background-color: var(--hightlight);
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    aspect-ratio: 1;
-    z-index: -1;
-    position: absolute;
-    top: -50px;
-    left: 50px;
-    transition: all .4s ease-in-out;
-} */
-
 .text__intro {
     flex-basis: 45%;
     align-self: flex-end;
@@ -317,51 +304,6 @@ nav ul li:hover::before {
     text-align: center;
     margin: 1rem 0;
     position: relative;
-}
-
-.status {
-    width: 280px;
-    height: 50px;
-    border: 2px var(--text-and-title) solid;
-    border-radius: 50px;
-    overflow: hidden;
-    position: relative;
-}
-
-.status p {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 700;
-}
-
-.status p:first-child {
-    animation: slideOut 8s infinite linear;
-}
-
-.status p:last-child {
-    transform: translateX(100%);
-    animation: slideIn 8s infinite linear;
-}
-
-@keyframes slideOut {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
 }
 
 .img__hover {
