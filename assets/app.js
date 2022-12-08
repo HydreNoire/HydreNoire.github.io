@@ -60,7 +60,6 @@ const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1) + min
 highlightItem.forEach(element => {
     element.addEventListener('mouseover', () => {
         hoveringImg(element, 'data-highlight', "url(./assets/highlight", ".gif)");
-        // document.querySelectorAll('.hightlight::before').style.transform = 'rotate(' + getRandom(-15, 15) + 'deg)';
     })
 
     element.addEventListener('mouseleave', () => {
