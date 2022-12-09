@@ -89,33 +89,33 @@ window.addEventListener("scroll", function () {
 })
 
 // CLICKABLE CANVA
-// let canvaIcon = document.querySelector('.canva__icon');
+let canvaIcon = document.querySelector('.canva__icon');
 
-// canvaIcon.addEventListener('click', () => {
-//     let iconCreate = document.createElement('span');
-//     let icon = ['javascript', 'css', 'html', 'sass', 'bootstrap', 'php', 'symfony'];
+canvaIcon.addEventListener('click', () => {
+    let iconCreate = document.createElement('span');
+    let icon = ['javascript', 'css', 'html', 'sass', 'bootstrap', 'php', 'symfony', 'mysql'];
 
-//     iconCreate.classList.add('icon__on__canva');
-//     iconCreate.style.top = getRandom(0, 80) + '%';
-//     iconCreate.style.left = getRandom(0, 90) + '%';
-//     iconCreate.style.transform = "rotate(" + getRandom(-45, 45) + "deg)";
-//     iconCreate.innerHTML = icon[Math.floor(Math.random() * icon.length)];
+    iconCreate.classList.add('icon__on__canva');
+    iconCreate.style.top = getRandom(0, 80) + '%';
+    iconCreate.style.left = getRandom(0, 90) + '%';
+    iconCreate.style.transform = "rotate(" + getRandom(-45, 45) + "deg)";
+    iconCreate.innerHTML = icon[Math.floor(Math.random() * icon.length)];
 
-//     canvaIcon.appendChild(iconCreate);
+    canvaIcon.appendChild(iconCreate);
 
-//     document.querySelector('.reset__canva').addEventListener('click', () => {
-//         canvaIcon.removeChild(iconCreate);
-//     })
-// })
+    document.querySelector('.reset__canva').addEventListener('click', () => {
+        canvaIcon.removeChild(iconCreate);
+    })
+})
 
 // SHOWING STACK ACCORDEON
-// let accordeon = document.querySelector('.seemore__stack');
-// let listAccordeon = document.querySelector('.stacks');
-// accordeon.addEventListener('click', () => {
-//     console.log('Je clique ici');
-//     listAccordeon.classList.toggle('show');
-//     document.querySelector('.fa-chevron-down').classList.toggle('rotate');
-// })
+let accordeon = document.querySelector('.seemore__stack');
+let listAccordeon = document.querySelector('.stacks');
+accordeon.addEventListener('click', () => {
+    console.log('Je clique ici');
+    listAccordeon.classList.toggle('show');
+    document.querySelector('.fa-chevron-down').classList.toggle('rotate');
+})
 
 // MUSIC LISTENER
 // const audio = document.querySelector('#lofi');

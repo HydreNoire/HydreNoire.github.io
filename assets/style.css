@@ -342,12 +342,6 @@ nav ul li:hover::before {
     }
 }
 
-/* main {
-    width: 90%;
-    height: 100vh;
-    margin: auto;
-} */
-
 main section {
     width: 90%;
     margin: auto;
@@ -376,13 +370,139 @@ main section {
     font-weight: 700;
 }
 
-.skills .tech__stack {
-    flex-basis: 50%;
+.skills .canva__icon {
+    font-family: "Humane", sans-serif;
+    font-size: var(--section-size);
+    letter-spacing: .2rem;
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: grab;
 }
 
-.skills .tech__stack i {
-    font-size: 3rem;
-    margin: 1rem 1.5rem;
+.skills .clickable__stack {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.skills .clickable__stack p {
+    font-size: var(--paragraph);
+    color: var(--background);
+}
+
+.icon__on__canva {
+    position: absolute;
+    padding: .5rem 1rem;
+    background-color: var(--background);
+    border-radius: 50px;
+    font-family: 'Humane', sans-serif;
+    font-size: var(--section-size);
+    color: var(--text-and-title);
+    letter-spacing: .1rem;
+    border: 3px solid var(--text-and-title);
+    animation: pop .2s ease-in-out;
+    box-shadow: 11px 11px 24px -11px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.clickable__stack .reset__canva {
+    align-self: center;
+    padding: .5rem 1rem;
+    background-color: var(--background);
+    border-radius: 50px;
+    font-size: var(--paragraph);
+    color: var(--text-and-title);
+    font-weight: 700;
+    letter-spacing: .1rem;
+    border: 3px solid var(--text-and-title);
+    box-shadow: 11px 11px 24px -11px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.reset__canva:hover {
+    color: var(--background);
+    background-color: var(--hightlight);
+}
+
+.reset__canva:active {
+    background-color: var(--text-and-title);
+    color: var(--hightlight);
+}
+
+.clickable__stack .seemore__stack {
+    font-size: var(--paragraph);
+    vertical-align: middle;
+    padding: .5rem .6rem;
+    background-color: var(--text-and-title);
+    color: var(--hightlight);
+    border-radius: 50px;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.stacks {
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: showingUp .2s ease-in-out;
+}
+
+@keyframes showingUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    animation: rotateChevronUp .2s linear;
+}
+
+@keyframes rotateChevronUp {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.stacks li {
+    padding: .5rem 1rem;
+    background-color: var(--background);
+    border-radius: 50px;
+    font-family: 'Humane', sans-serif;
+    font-size: var(--section-size);
+    color: var(--text-and-title);
+    letter-spacing: .1rem;
+    border: 3px solid var(--text-and-title);
+    box-shadow: 11px 11px 24px -11px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
 .hobbies {
