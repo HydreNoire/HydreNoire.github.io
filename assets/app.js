@@ -72,6 +72,7 @@ function hoveringImg(el, data, srcStart, srcEnd) {
     let id = el.getAttribute(data);
     imageLi.style.backgroundImage = srcStart + id + srcEnd;
     imageLi.style.left = getRandom(0, 90) + '%';
+    imageLi.style.top = "-350%";
     el.appendChild(imageLi);
 }
 

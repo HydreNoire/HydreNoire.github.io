@@ -168,16 +168,16 @@ p {
     content: "";
     transform: rotate(-5deg);
     width: 100%;
-    height: 120%;
+    height: 100%;
     border-radius: 50%;
     border: 2px var(--hightlight) solid;
     position: absolute;
-    top: -.2rem;
-    left: -.2rem;
+    top: 0;
+    left: 0;
     z-index: -2;
 }
 
-.cursor {
+/* .cursor {
     z-index: 2;
     display: none;
     position: absolute;
@@ -194,7 +194,7 @@ p {
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 /* HEADER */
 header {
@@ -525,6 +525,7 @@ main section {
     object-position: center;
     position: absolute;
     top: 0;
+    left: 0;
     left: -5rem;
     z-index: -1;
     opacity: .3;
